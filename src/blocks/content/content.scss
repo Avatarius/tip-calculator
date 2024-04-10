@@ -1,14 +1,24 @@
 .content {
   display: flex;
   justify-content: space-between;
-  gap: 47px;
+  // gap: 47px;
+  gap: clamp(1.125rem, 0.487rem + 2.723vw, 2.938rem);
   margin: auto;
   border-radius: 25px;
-  padding: 32.5px 32px 32.5px;
+  // padding: 32.5px 32px 32.5px;
+  padding: clamp(1.219rem, 0.933rem + 1.221vw, 2.031rem) clamp(1rem, 0.648rem + 1.502vw, 2rem) 32.5px;
+  // inline-size: 396px;
   background-color: var(--content-background-color, hsl(0, 0%, 100%));
 
   &__input {
     padding-inline-start: 16px;
     padding-block: 12px;
+  }
+}
+
+
+@media (width < 1024px) {
+  .content {
+    flex-direction: column;
   }
 }

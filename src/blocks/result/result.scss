@@ -7,6 +7,10 @@
   background-color: var(--dark-color, hsl(183, 100%, 15%));
   inline-size: 413px;
 
+  @media (width < 1024px) {
+    inline-size: 100%;
+  }
+
   &__entity {
     display: grid;
     grid-template-columns: max-content 1fr min-content;

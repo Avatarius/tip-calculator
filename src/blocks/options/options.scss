@@ -1,6 +1,8 @@
 .options {
-  margin-block-start: 38px;
-  margin-block-end: 40px;
+  // margin-block-start: 38px;
+  // margin-block-end: 40px;
+  margin-block-start: clamp(1.875rem, 1.699rem + 0.751vw, 2.375rem);
+  margin-block-end: clamp(2rem, 1.824rem + 0.751vw, 2.5rem);
 
   &__title {
     margin-block-end: 16px;
@@ -12,6 +14,13 @@
     grid-template-rows: repeat(2, 1fr);
     row-gap: 16px;
     column-gap: 13px;
+  }
+
+  @media (width < 1024px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
 
   &__item {
@@ -31,3 +40,4 @@
     block-size: 100%;
   }
 }
+

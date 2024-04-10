@@ -1,4 +1,7 @@
 .input {
+
+  // inline-size: 100%;
+
   &__title {
     margin-block-end: 7px;
   }
@@ -8,7 +11,12 @@
     background-repeat: no-repeat;
     background-position: 19px 15px;
     background-size: 11px;
-    inline-size: 378px;
+    // inline-size: 378px;
+    inline-size: 100%;
+
+    @media (width < 1024px) {
+      inline-size: 100%;
+    }
 
     &_bill {
       background-image: url("../images/icon-dollar.svg");
