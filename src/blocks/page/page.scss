@@ -1,0 +1,8 @@
+.page {
+  background-color: var(--page-background-color, hsl(185, 41%, 84%));
+  font-family: 'SpaceMono', sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

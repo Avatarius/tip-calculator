@@ -1,0 +1,18 @@
+.textfield {
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  appearance: none;
+  font-size: 24px;
+}
+
+
+.textfield::-webkit-outer-spin-button,
+.textfield::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.textfield[type=number] {
+  -moz-appearance: textfield;
+}

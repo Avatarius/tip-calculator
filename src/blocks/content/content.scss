@@ -1,0 +1,21 @@
+.content {
+  background-color: var(--content-background-color, hsl(0, 0%, 100%));
+  padding: 30.5px 32px 32.5px;
+  border-radius: 25px;
+  // inline-size: 920px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 47px;
+  // align-items: center;
+
+  /* &__input {
+    display: flex;
+    flex-direction: column;
+  } */
+  &__input {
+    padding-block: 12px;
+    padding-inline-start: 16px;
+    // padding-inline-start: 21px;
+  }
+}

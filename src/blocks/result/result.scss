@@ -1,0 +1,48 @@
+.result {
+  background-color: var(--result-background-color, hsl(183, 100%, 15%));
+  inline-size: 413px;
+  border-radius: 15px;
+  padding: 43.5px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  &__entity {
+    inline-size: 100%;
+    display: grid;
+    grid-template-columns: max-content 1fr min-content;
+    grid-template-areas: 'description . cost';
+    align-items: center;
+  }
+
+  &__description {
+    grid-area: description;
+  }
+
+  &__title, &__person {
+    display: block;
+  }
+
+  &__title {
+    margin-block-end: 1px;
+  }
+
+  &__person {
+    font-size: 13px;
+  }
+
+  &__cost {
+    grid-area: cost;
+    font-size: 46px;
+  }
+
+  &__reset {
+    margin-block-start: 92px;
+    inline-size: 100%;
+    block-size: 48px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-block-start: 4px;
+    padding-inline-end: 10px;
+  }
+}
