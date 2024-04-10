@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding: 152px 0 79px;
-  padding: clamp(2.563rem, 0.12rem + 10.423vw, 9.5rem) 0 clamp(1.938rem, 0.881rem + 4.507vw, 4.938rem);
+  padding: clamp(2.563rem, 0.12rem + 10.423vw, 9.5rem) 0
+    clamp(1.938rem, 0.881rem + 4.507vw, 4.938rem);
   color: var(--dark-color, hsl(183, 100%, 15%));
   font-size: 12px;
 

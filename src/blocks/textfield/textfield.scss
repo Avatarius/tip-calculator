@@ -1,13 +1,13 @@
 .textfield {
   border: none;
+  border: 2px solid transparent;
   border-radius: 5px;
   padding: 4px 14px 5px 5px;
+  outline: none;
+  color: var(--dark-color, hsl(183, 100%, 15%));
   text-align: right;
   background-color: var(--input-background-color, hsl(189, 41%, 97%));
-  color: var(--dark-color, hsl(183, 100%, 15%));
   appearance: none;
-  border: 2px solid transparent;
-  outline: none;
 
   &:focus {
     border: 2px solid var(--accent-color, hsl(172, 67%, 45%));
@@ -18,7 +18,7 @@
     margin: 0;
     -webkit-appearance: none;
   }
-  &[type=number] {
+  &[type="number"] {
     -moz-appearance: textfield;
   }
 }

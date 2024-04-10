@@ -1,14 +1,16 @@
 .result {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: clamp(1.313rem, 1.18rem + 0.563vw, 1.688rem);
   border-radius: 15px;
-  padding: 43.5px 40px 40px;
+  padding: clamp(2.219rem, 2.065rem + 0.657vw, 2.656rem)
+    clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem)
+    clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
   background-color: var(--dark-color, hsl(183, 100%, 15%));
   inline-size: 413px;
 
   @media (width < 1024px) {
-    inline-size: 100%;
+    inline-size: 95.5%;
   }
 
   &__entity {
@@ -21,6 +23,7 @@
 
   &__description {
     grid-area: description;
+    padding-block-start: 3px;
   }
 
   &__title,
@@ -34,24 +37,24 @@
   }
 
   &__person {
-    font-size: 13px;
     color: hsl(184, 14%, 56%);
+    font-size: 13px;
   }
 
   &__cost {
     grid-area: cost;
     color: var(--accent-color, hsl(172, 67%, 45%));
-    font-size: 46px;
+    font-size: clamp(1.875rem, 1.523rem + 1.502vw, 2.875rem);
   }
 
   &__reset {
-    background-color: var(--accent-color, hsl(172, 67%, 45%));
-    color: var(--dark-color, hsl(183, 100%, 15%));
-    margin-block-start: 92px;
+    margin-block-start: clamp(0.688rem, -1.161rem + 7.887vw, 5.938rem);
     padding-inline-end: 10px;
     padding-block-start: 4px;
+    color: var(--dark-color, hsl(183, 100%, 15%));
     font-size: 20px;
     text-transform: uppercase;
+    background-color: var(--accent-color, hsl(172, 67%, 45%));
     inline-size: 100%;
     block-size: 48px;
   }
