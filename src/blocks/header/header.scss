@@ -1,17 +1,16 @@
 .header {
-
-  padding: 152px 0 79px;
-  font-size: 12px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 152px 0 79px;
+  color: var(--dark-color, hsl(183, 100%, 15%));
+  font-size: 12px;
 
   &__title {
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 10px;
     margin-inline-start: 10px;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__span {

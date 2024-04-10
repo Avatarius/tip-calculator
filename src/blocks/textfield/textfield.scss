@@ -1,21 +1,24 @@
 .textfield {
   border: none;
   border-radius: 5px;
-  background-color: hsl(189, 41%, 97%);
-  appearance: none;
-  font-size: 24px;
+  padding: 4px 14px 5px 5px;
   text-align: right;
-  padding: 5px 16px 5px 5px;
-  color: var(--input-text-color, hsl(183, 100%, 15%));
-}
+  background-color: var(--input-background-color, hsl(189, 41%, 97%));
+  color: var(--dark-color, hsl(183, 100%, 15%));
+  appearance: none;
+  border: 2px solid transparent;
+  outline: none;
 
+  &:focus {
+    border: 2px solid var(--accent-color, hsl(172, 67%, 45%));
+  }
 
-.textfield::-webkit-outer-spin-button,
-.textfield::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.textfield[type=number] {
-  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
 }

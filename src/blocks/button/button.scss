@@ -4,4 +4,10 @@
   font-size: 24px;
   cursor: pointer;
   appearance: none;
+  transition: background-color, 0.2s linear, color 0.2s linear;
+
+  &:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: var(--dark-color, hsl(183, 100%, 15%));
+  }
 }

@@ -1,5 +1,5 @@
 .options {
-  margin-block-start: 42px;
+  margin-block-start: 38px;
   margin-block-end: 40px;
 
   &__title {
@@ -10,8 +10,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 13px;
     row-gap: 16px;
+    column-gap: 13px;
   }
 
   &__item {
@@ -20,10 +20,10 @@
   }
 
   &__button {
+    color: var(--contrast-text-color, hsl(0, 0%, 100%));
+    background-color: var(--dark-color, hsl(183, 100%, 15%));
     inline-size: 100%;
     block-size: 100%;
-    background-color: var(--options-button-background-color, hsl(183, 100%, 15%));
-    color: var(--options-button-text-color, hsl(0, 0%, 100%));
   }
 
   &__textfield {

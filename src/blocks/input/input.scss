@@ -4,18 +4,18 @@
   }
 
   &__textfield {
-    inline-size: 378px;
     font-size: 24px;
     background-repeat: no-repeat;
-    background-size: 11px;
     background-position: 19px 15px;
+    background-size: 11px;
+    inline-size: 378px;
 
     &_bill {
-      background-image: url('../images/icon-dollar.svg');
+      background-image: url("../images/icon-dollar.svg");
     }
 
     &_person {
-      background-image: url('../images/icon-person.svg');
+      background-image: url("../images/icon-person.svg");
     }
   }
 }
